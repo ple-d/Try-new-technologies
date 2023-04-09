@@ -39,16 +39,10 @@ class NetworkProvidersFactory {
     
     private lazy var loggerPlugin = NetworkLoggerPlugin()
     
-    private lazy var rickMainProvider: MoyaProvider<RickNetworkService> = {
-        let interceptor = Interceptor(adapters: [], retriers: [])
-        let session = Alamofire.Session(startRequestsImmediately: false)
-        return MoyaProvider<RickNetworkService>(session: session, plugins: [headersPlugin, loggerPlugin])
-    }()
-    
     // MARK: Providers
     
-    private lazy var mainProvider: MoyaProvider<RickNetworkService> = {
-        let interceptor = Interceptor(adapters: [], retriers: [], interceptors: [])
+    private lazy var rickMainProvider: MoyaProvider<RickNetworkService> = {
+        let interceptor = Interceptor(adapters: [], retriers: [])
         let session = Alamofire.Session(startRequestsImmediately: false)
         return MoyaProvider<RickNetworkService>(session: session, plugins: [headersPlugin, loggerPlugin])
     }()

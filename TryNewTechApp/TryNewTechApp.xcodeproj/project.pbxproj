@@ -46,6 +46,11 @@
 		04DB8FF729E0A2C300A06049 /* RickNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB8FF629E0A2C300A06049 /* RickNetworkService.swift */; };
 		04DB8FFB29E31B9B00A06049 /* TargetTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB8FFA29E31B9B00A06049 /* TargetTypeExtension.swift */; };
 		04DB8FFD29E31C4D00A06049 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB8FFC29E31C4D00A06049 /* StringExtension.swift */; };
+		04DB8FFF29E32BF900A06049 /* RickMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB8FFE29E32BF900A06049 /* RickMainViewController.swift */; };
+		04DB900229E32C0C00A06049 /* RickMainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900129E32C0C00A06049 /* RickMainContentView.swift */; };
+		04DB900429E32C1400A06049 /* RIckMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900329E32C1400A06049 /* RIckMainViewModel.swift */; };
+		04DB900629E32D9C00A06049 /* ViewModellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900529E32D9C00A06049 /* ViewModellable.swift */; };
+		04DB900A29E330C500A06049 /* RickCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900929E330C500A06049 /* RickCollectionViewCell.swift */; };
 		4627DB9DD3EFD2EAA051B2BB /* Pods_TryNewTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E0D20D91E3F4E19EE90D38 /* Pods_TryNewTechAppTests.framework */; };
 		7C239E04ECEF7F2FC6C1257A /* Pods_TryNewTechApp_TryNewTechAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E8065887DC7EA33AC9C709 /* Pods_TryNewTechApp_TryNewTechAppUITests.framework */; };
 		B67D49140D43193FC025EE4B /* Pods_TryNewTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E850C12395356CA3DBCF40C2 /* Pods_TryNewTechApp.framework */; };
@@ -112,6 +117,11 @@
 		04DB8FF629E0A2C300A06049 /* RickNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickNetworkService.swift; sourceTree = "<group>"; };
 		04DB8FFA29E31B9B00A06049 /* TargetTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTypeExtension.swift; sourceTree = "<group>"; };
 		04DB8FFC29E31C4D00A06049 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		04DB8FFE29E32BF900A06049 /* RickMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMainViewController.swift; sourceTree = "<group>"; };
+		04DB900129E32C0C00A06049 /* RickMainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMainContentView.swift; sourceTree = "<group>"; };
+		04DB900329E32C1400A06049 /* RIckMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIckMainViewModel.swift; sourceTree = "<group>"; };
+		04DB900529E32D9C00A06049 /* ViewModellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModellable.swift; sourceTree = "<group>"; };
+		04DB900929E330C500A06049 /* RickCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickCollectionViewCell.swift; sourceTree = "<group>"; };
 		5961E5156A04A5489746146B /* Pods-TryNewTechApp-TryNewTechAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryNewTechApp-TryNewTechAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TryNewTechApp-TryNewTechAppUITests/Pods-TryNewTechApp-TryNewTechAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CDD781E1EA400E14FBD60D0 /* Pods-TryNewTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryNewTechApp.release.xcconfig"; path = "Target Support Files/Pods-TryNewTechApp/Pods-TryNewTechApp.release.xcconfig"; sourceTree = "<group>"; };
 		9F08F0C8653676ADC76C6B35 /* Pods-TryNewTechAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryNewTechAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TryNewTechAppTests/Pods-TryNewTechAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +253,7 @@
 				042AE37529E0413300284130 /* TypeAliases.swift */,
 				042AE37229E03F3600284130 /* Coordinator */,
 				042AE39629E08F9600284130 /* Extensions */,
+				04DB900729E32DA700A06049 /* ViewModellable */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -280,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				042AE38F29E08C6A00284130 /* MainCoordinator.swift */,
+				04DB900029E32BFD00A06049 /* RickMain */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -320,6 +332,33 @@
 				04DB8FFA29E31B9B00A06049 /* TargetTypeExtension.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		04DB900029E32BFD00A06049 /* RickMain */ = {
+			isa = PBXGroup;
+			children = (
+				04DB900829E330B500A06049 /* Views */,
+				04DB8FFE29E32BF900A06049 /* RickMainViewController.swift */,
+				04DB900129E32C0C00A06049 /* RickMainContentView.swift */,
+				04DB900329E32C1400A06049 /* RIckMainViewModel.swift */,
+			);
+			path = RickMain;
+			sourceTree = "<group>";
+		};
+		04DB900729E32DA700A06049 /* ViewModellable */ = {
+			isa = PBXGroup;
+			children = (
+				04DB900529E32D9C00A06049 /* ViewModellable.swift */,
+			);
+			path = ViewModellable;
+			sourceTree = "<group>";
+		};
+		04DB900829E330B500A06049 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04DB900929E330C500A06049 /* RickCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		695056597EFED2D9B2931EC7 /* Frameworks */ = {
@@ -605,8 +644,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DB900429E32C1400A06049 /* RIckMainViewModel.swift in Sources */,
 				042AE38B29E08B4000284130 /* DeepLinks.swift in Sources */,
 				042AE39A29E094B400284130 /* TopVisibleVCProvidable.swift in Sources */,
+				04DB8FFF29E32BF900A06049 /* RickMainViewController.swift in Sources */,
 				042AE39829E08FBD00284130 /* Bundle.swift in Sources */,
 				042AE39029E08C6A00284130 /* MainCoordinator.swift in Sources */,
 				04DB8FFD29E31C4D00A06049 /* StringExtension.swift in Sources */,
@@ -624,6 +665,7 @@
 				042AE38229E043AC00284130 /* CoordNavController.swift in Sources */,
 				042AE38929E08A1C00284130 /* TopViewControllerFindable.swift in Sources */,
 				042AE39229E08CD600284130 /* BaseViewController.swift in Sources */,
+				04DB900229E32C0C00A06049 /* RickMainContentView.swift in Sources */,
 				04DB8FF429E0A12500A06049 /* HeadersPlugin.swift in Sources */,
 				042AE32B29E0214800284130 /* SceneDelegate.swift in Sources */,
 				042AE38029E0437D00284130 /* NavBaseCoordinator.swift in Sources */,
@@ -632,11 +674,13 @@
 				042AE36629E03CDE00284130 /* KeychainHelper.swift in Sources */,
 				042AE39C29E094F100284130 /* NSObject.swift in Sources */,
 				042AE37E29E0435100284130 /* CoordinatorTypes.swift in Sources */,
+				04DB900A29E330C500A06049 /* RickCollectionViewCell.swift in Sources */,
 				042AE37829E0415E00284130 /* DebugLoggable.swift in Sources */,
 				042AE3A129E0A01800284130 /* NetworkProvidersFactory.swift in Sources */,
 				042AE37A29E041C500284130 /* BaseCoordinator.swift in Sources */,
 				042AE37129E03F0D00284130 /* WindowCoordinator.swift in Sources */,
 				042AE39F29E09E6600284130 /* NetworkParams.swift in Sources */,
+				04DB900629E32D9C00A06049 /* ViewModellable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,7 +865,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = PKAQSYSJV4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TryNewTechApp/Resources/Info.plist;
@@ -849,7 +893,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = PKAQSYSJV4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TryNewTechApp/Resources/Info.plist;
