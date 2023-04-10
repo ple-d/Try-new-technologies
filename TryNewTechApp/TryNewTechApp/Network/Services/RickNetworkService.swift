@@ -19,8 +19,7 @@ extension RickNetworkService: TargetType {
     
     var path: String {
         switch self {
-        case .character(page: let page):
-//            return "character/?page=\(page)"
+        case .character:
             return "character/"
         }
     }
@@ -50,8 +49,8 @@ extension RickNetworkService: TargetType {
     
     var parameters: [String: Any]? {
         switch self {
-        case .character:
-            return nil
+        case .character(page: let page):
+            return ["page":page]
         }
     }
     

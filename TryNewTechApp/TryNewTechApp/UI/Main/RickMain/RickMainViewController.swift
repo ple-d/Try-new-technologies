@@ -8,6 +8,7 @@
 import Moya
 import RxSwift
 import RxCocoa
+import RxSwiftExt
 import RxDataSources
 
 final class RickMainViewController: BaseViewController {
@@ -59,16 +60,18 @@ final class RickMainViewController: BaseViewController {
             return cell
         } configureSupplementaryView: { ds, collectionView, kind, index in
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: RickCollectionHeaderView.className, for: index) as! RickCollectionHeaderView
+            header.isEnabled = false
             header.itemClick.emit(to: self.viewModel.input.historyClicked).disposed(by: self.disposeBag)
             return header
         }
         
-        self.rx.viewWillAppear
-            .map { _ in () }
-            .bind(to: self.viewModel.input.refresher)
-            .disposed(by: disposeBag)
-        
         disposeBag.insert(
+            self.rx.viewWillAppear
+                .map { _ in () }
+                .bind(to: self.viewModel.input.refresher),
+            
+            self.contentView.collectionView.rx.reachedBottom().bind(to: self.viewModel.input.refresher),
+            
             output.characters.map({ models -> [SectionModel<String, CharacterModel>] in
                 return [SectionModel(model: "", items: models)]
             }).drive(self.contentView.collectionView.rx.items(dataSource: dataSource))

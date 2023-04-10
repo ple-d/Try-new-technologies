@@ -17,7 +17,9 @@ class RickMainViewModel: StoringViewModellable {
     let provider: MoyaProvider<RickNetworkService>
     private let disposeBag = DisposeBag()
     
-    private let pageRelay = BehaviorRelay<Int>(value: 0)
+    private var page = 0
+    private var maxValue = 20
+    
     private let charactersResponse = PublishRelay<PaginatedCharactersResponse?>()
     private let charactersRelay = BehaviorRelay<[CharacterModel]>(value: [])
     
@@ -43,14 +45,11 @@ class RickMainViewModel: StoringViewModellable {
     }
     
     private func bind() {
-        charactersResponse.bind { [weak self] response in
-            guard let response else { return }
-            self?.charactersRelay.accept(response.results)
-        }.disposed(by: disposeBag)
-        
+    
         let charactersOrdersRequest = self.input.refresher.flatMapLatest { () -> Observable<Event<PaginatedCharactersResponse>> in
-            self.provider.rx
-                .request(.character(page: 0))
+            
+            return self.provider.rx
+                .request(.character(page: self.page))
                 .parseObject(PaginatedCharactersResponse.self)
                 .asObservable()
                 .materialize()
@@ -60,5 +59,13 @@ class RickMainViewModel: StoringViewModellable {
             .compactMap({ $0.element })
             .bind(to: charactersResponse)
             .disposed(by: disposeBag)
+        
+        charactersResponse.bind { [weak self] response in
+            guard let response, let self else { return }
+            self.page += 1
+            var newValue = self.charactersRelay.value
+            newValue.append(contentsOf: (response.results))
+            self.charactersRelay.accept(newValue)
+        }.disposed(by: disposeBag)
     }
 }
