@@ -51,6 +51,25 @@
 		04DB900429E32C1400A06049 /* RIckMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900329E32C1400A06049 /* RIckMainViewModel.swift */; };
 		04DB900629E32D9C00A06049 /* ViewModellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900529E32D9C00A06049 /* ViewModellable.swift */; };
 		04DB900A29E330C500A06049 /* RickCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900929E330C500A06049 /* RickCollectionViewCell.swift */; };
+		04DB900F29E33B4400A06049 /* ControlsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB900E29E33B4400A06049 /* ControlsFactory.swift */; };
+		04DB901129E33BD000A06049 /* StandartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB901029E33BD000A06049 /* StandartButton.swift */; };
+		04DB901429E3564300A06049 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB901329E3564300A06049 /* Constants.swift */; };
+		04DB901629E3568200A06049 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB901529E3568200A06049 /* Fonts.swift */; };
+		04DB901C29E366BA00A06049 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB901B29E366BA00A06049 /* Colors.swift */; };
+		04DB901D29E367C600A06049 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DB901A29E3664C00A06049 /* Montserrat-Bold.ttf */; };
+		04DB901E29E367C900A06049 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DB901829E3574200A06049 /* Montserrat-ExtraLight.ttf */; };
+		04DB901F29E367CB00A06049 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DB901929E3574200A06049 /* Montserrat-Regular.ttf */; };
+		04DB902329E37F9900A06049 /* RickCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB902229E37F9900A06049 /* RickCollectionHeaderView.swift */; };
+		04DB902529E382B100A06049 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB902429E382B100A06049 /* CharacterModel.swift */; };
+		04DB902829E383AE00A06049 /* CharacterOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB902729E383AE00A06049 /* CharacterOrigin.swift */; };
+		04DB902A29E3841200A06049 /* CharacterLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB902929E3841200A06049 /* CharacterLocation.swift */; };
+		04DB902E29E3847C00A06049 /* CharacterGenderEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB902D29E3847C00A06049 /* CharacterGenderEnum.swift */; };
+		04DB903029E385CB00A06049 /* PaginatedCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB902F29E385CB00A06049 /* PaginatedCharactersResponse.swift */; };
+		04DB903229E385FF00A06049 /* PaginatedInfoCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB903129E385FF00A06049 /* PaginatedInfoCharactersResponse.swift */; };
+		04DB903529E38B5D00A06049 /* RemoteDataRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB903429E38B5D00A06049 /* RemoteDataRx.swift */; };
+		04DB903729E38C5300A06049 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB903629E38C5300A06049 /* Parser.swift */; };
+		04DB903929E395FB00A06049 /* UIViewControllerRxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB903829E395FB00A06049 /* UIViewControllerRxExtensions.swift */; };
+		04DB903C29E3AE9600A06049 /* StandartWhiteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB903B29E3AE9600A06049 /* StandartWhiteLabel.swift */; };
 		4627DB9DD3EFD2EAA051B2BB /* Pods_TryNewTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E0D20D91E3F4E19EE90D38 /* Pods_TryNewTechAppTests.framework */; };
 		7C239E04ECEF7F2FC6C1257A /* Pods_TryNewTechApp_TryNewTechAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E8065887DC7EA33AC9C709 /* Pods_TryNewTechApp_TryNewTechAppUITests.framework */; };
 		B67D49140D43193FC025EE4B /* Pods_TryNewTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E850C12395356CA3DBCF40C2 /* Pods_TryNewTechApp.framework */; };
@@ -122,6 +141,25 @@
 		04DB900329E32C1400A06049 /* RIckMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIckMainViewModel.swift; sourceTree = "<group>"; };
 		04DB900529E32D9C00A06049 /* ViewModellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModellable.swift; sourceTree = "<group>"; };
 		04DB900929E330C500A06049 /* RickCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickCollectionViewCell.swift; sourceTree = "<group>"; };
+		04DB900E29E33B4400A06049 /* ControlsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsFactory.swift; sourceTree = "<group>"; };
+		04DB901029E33BD000A06049 /* StandartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartButton.swift; sourceTree = "<group>"; };
+		04DB901329E3564300A06049 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04DB901529E3568200A06049 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		04DB901829E3574200A06049 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		04DB901929E3574200A06049 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		04DB901A29E3664C00A06049 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		04DB901B29E366BA00A06049 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		04DB902229E37F9900A06049 /* RickCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickCollectionHeaderView.swift; sourceTree = "<group>"; };
+		04DB902429E382B100A06049 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		04DB902729E383AE00A06049 /* CharacterOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterOrigin.swift; sourceTree = "<group>"; };
+		04DB902929E3841200A06049 /* CharacterLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLocation.swift; sourceTree = "<group>"; };
+		04DB902D29E3847C00A06049 /* CharacterGenderEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGenderEnum.swift; sourceTree = "<group>"; };
+		04DB902F29E385CB00A06049 /* PaginatedCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedCharactersResponse.swift; sourceTree = "<group>"; };
+		04DB903129E385FF00A06049 /* PaginatedInfoCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedInfoCharactersResponse.swift; sourceTree = "<group>"; };
+		04DB903429E38B5D00A06049 /* RemoteDataRx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataRx.swift; sourceTree = "<group>"; };
+		04DB903629E38C5300A06049 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		04DB903829E395FB00A06049 /* UIViewControllerRxExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRxExtensions.swift; sourceTree = "<group>"; };
+		04DB903B29E3AE9600A06049 /* StandartWhiteLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartWhiteLabel.swift; sourceTree = "<group>"; };
 		5961E5156A04A5489746146B /* Pods-TryNewTechApp-TryNewTechAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryNewTechApp-TryNewTechAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TryNewTechApp-TryNewTechAppUITests/Pods-TryNewTechApp-TryNewTechAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CDD781E1EA400E14FBD60D0 /* Pods-TryNewTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryNewTechApp.release.xcconfig"; path = "Target Support Files/Pods-TryNewTechApp/Pods-TryNewTechApp.release.xcconfig"; sourceTree = "<group>"; };
 		9F08F0C8653676ADC76C6B35 /* Pods-TryNewTechAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryNewTechAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TryNewTechAppTests/Pods-TryNewTechAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +224,7 @@
 		042AE32729E0214800284130 /* TryNewTechApp */ = {
 			isa = PBXGroup;
 			children = (
+				04DB901229E3563800A06049 /* Style */,
 				042AE39D29E09E5400284130 /* Network */,
 				042AE38529E089D200284130 /* UI */,
 				042AE36F29E03EFB00284130 /* Utility */,
@@ -219,6 +258,7 @@
 		042AE35829E0340700284130 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04DB901729E356DC00A06049 /* Fonts */,
 				042AE33129E0214900284130 /* Assets.xcassets */,
 				042AE33329E0214900284130 /* LaunchScreen.storyboard */,
 				042AE33629E0214900284130 /* Info.plist */,
@@ -254,6 +294,7 @@
 				042AE37229E03F3600284130 /* Coordinator */,
 				042AE39629E08F9600284130 /* Extensions */,
 				04DB900729E32DA700A06049 /* ViewModellable */,
+				04DB903A29E395FE00A06049 /* Rx */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -283,6 +324,8 @@
 				042AE38629E089DF00284130 /* DeepLink.swift */,
 				042AE39129E08CD600284130 /* BaseViewController.swift */,
 				042AE38E29E08C5D00284130 /* Main */,
+				04DB900D29E33AD900A06049 /* Common */,
+				04DB900E29E33B4400A06049 /* ControlsFactory.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -309,10 +352,12 @@
 		042AE39D29E09E5400284130 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				04DB903329E38B3B00A06049 /* Providers */,
 				04DB8FF529E0A2B800A06049 /* Services */,
 				04DB8FF229E0A10D00A06049 /* Plugins */,
 				042AE39E29E09E6600284130 /* NetworkParams.swift */,
 				042AE3A029E0A01800284130 /* NetworkProvidersFactory.swift */,
+				04DB903629E38C5300A06049 /* Parser.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -338,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				04DB900829E330B500A06049 /* Views */,
+				04DB902629E3839800A06049 /* Models */,
 				04DB8FFE29E32BF900A06049 /* RickMainViewController.swift */,
 				04DB900129E32C0C00A06049 /* RickMainContentView.swift */,
 				04DB900329E32C1400A06049 /* RIckMainViewModel.swift */,
@@ -357,8 +403,67 @@
 			isa = PBXGroup;
 			children = (
 				04DB900929E330C500A06049 /* RickCollectionViewCell.swift */,
+				04DB902229E37F9900A06049 /* RickCollectionHeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04DB900D29E33AD900A06049 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04DB901029E33BD000A06049 /* StandartButton.swift */,
+				04DB903B29E3AE9600A06049 /* StandartWhiteLabel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		04DB901229E3563800A06049 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				04DB901329E3564300A06049 /* Constants.swift */,
+				04DB901529E3568200A06049 /* Fonts.swift */,
+				04DB901B29E366BA00A06049 /* Colors.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		04DB901729E356DC00A06049 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				04DB901829E3574200A06049 /* Montserrat-ExtraLight.ttf */,
+				04DB901A29E3664C00A06049 /* Montserrat-Bold.ttf */,
+				04DB901929E3574200A06049 /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		04DB902629E3839800A06049 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04DB902429E382B100A06049 /* CharacterModel.swift */,
+				04DB902D29E3847C00A06049 /* CharacterGenderEnum.swift */,
+				04DB902929E3841200A06049 /* CharacterLocation.swift */,
+				04DB902729E383AE00A06049 /* CharacterOrigin.swift */,
+				04DB902F29E385CB00A06049 /* PaginatedCharactersResponse.swift */,
+				04DB903129E385FF00A06049 /* PaginatedInfoCharactersResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04DB903329E38B3B00A06049 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				04DB903429E38B5D00A06049 /* RemoteDataRx.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		04DB903A29E395FE00A06049 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				04DB903829E395FB00A06049 /* UIViewControllerRxExtensions.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		695056597EFED2D9B2931EC7 /* Frameworks */ = {
@@ -495,6 +600,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DB901D29E367C600A06049 /* Montserrat-Bold.ttf in Resources */,
+				04DB901E29E367C900A06049 /* Montserrat-ExtraLight.ttf in Resources */,
+				04DB901F29E367CB00A06049 /* Montserrat-Regular.ttf in Resources */,
 				042AE35F29E0345A00284130 /* Localizable.strings in Resources */,
 				042AE36229E0346400284130 /* Localizable.stringsdict in Resources */,
 				042AE33529E0214900284130 /* LaunchScreen.storyboard in Resources */,
@@ -645,12 +753,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DB900429E32C1400A06049 /* RIckMainViewModel.swift in Sources */,
+				04DB903529E38B5D00A06049 /* RemoteDataRx.swift in Sources */,
 				042AE38B29E08B4000284130 /* DeepLinks.swift in Sources */,
 				042AE39A29E094B400284130 /* TopVisibleVCProvidable.swift in Sources */,
 				04DB8FFF29E32BF900A06049 /* RickMainViewController.swift in Sources */,
 				042AE39829E08FBD00284130 /* Bundle.swift in Sources */,
 				042AE39029E08C6A00284130 /* MainCoordinator.swift in Sources */,
+				04DB902E29E3847C00A06049 /* CharacterGenderEnum.swift in Sources */,
 				04DB8FFD29E31C4D00A06049 /* StringExtension.swift in Sources */,
+				04DB903029E385CB00A06049 /* PaginatedCharactersResponse.swift in Sources */,
+				04DB903229E385FF00A06049 /* PaginatedInfoCharactersResponse.swift in Sources */,
 				042AE36829E03D2900284130 /* SwiftyUserDefaults.swift in Sources */,
 				042AE32D29E0214800284130 /* ViewController.swift in Sources */,
 				042AE36E29E03E5B00284130 /* Localizations.swift in Sources */,
@@ -658,27 +770,39 @@
 				04DB8FFB29E31B9B00A06049 /* TargetTypeExtension.swift in Sources */,
 				042AE39429E08EED00284130 /* AppCoordinator.swift in Sources */,
 				042AE37C29E0431900284130 /* CoordChildManagable.swift in Sources */,
+				04DB900F29E33B4400A06049 /* ControlsFactory.swift in Sources */,
+				04DB901429E3564300A06049 /* Constants.swift in Sources */,
 				042AE37629E0413300284130 /* TypeAliases.swift in Sources */,
 				042AE38D29E08B9600284130 /* Localizer.swift in Sources */,
 				042AE32929E0214800284130 /* AppDelegate.swift in Sources */,
+				04DB901629E3568200A06049 /* Fonts.swift in Sources */,
 				042AE38729E089DF00284130 /* DeepLink.swift in Sources */,
 				042AE38229E043AC00284130 /* CoordNavController.swift in Sources */,
+				04DB902A29E3841200A06049 /* CharacterLocation.swift in Sources */,
 				042AE38929E08A1C00284130 /* TopViewControllerFindable.swift in Sources */,
+				04DB903929E395FB00A06049 /* UIViewControllerRxExtensions.swift in Sources */,
 				042AE39229E08CD600284130 /* BaseViewController.swift in Sources */,
 				04DB900229E32C0C00A06049 /* RickMainContentView.swift in Sources */,
 				04DB8FF429E0A12500A06049 /* HeadersPlugin.swift in Sources */,
 				042AE32B29E0214800284130 /* SceneDelegate.swift in Sources */,
+				04DB903729E38C5300A06049 /* Parser.swift in Sources */,
+				04DB903C29E3AE9600A06049 /* StandartWhiteLabel.swift in Sources */,
 				042AE38029E0437D00284130 /* NavBaseCoordinator.swift in Sources */,
 				042AE37429E040FD00284130 /* Coordinatable.swift in Sources */,
 				04DB8FF729E0A2C300A06049 /* RickNetworkService.swift in Sources */,
 				042AE36629E03CDE00284130 /* KeychainHelper.swift in Sources */,
+				04DB902829E383AE00A06049 /* CharacterOrigin.swift in Sources */,
+				04DB901C29E366BA00A06049 /* Colors.swift in Sources */,
 				042AE39C29E094F100284130 /* NSObject.swift in Sources */,
 				042AE37E29E0435100284130 /* CoordinatorTypes.swift in Sources */,
 				04DB900A29E330C500A06049 /* RickCollectionViewCell.swift in Sources */,
 				042AE37829E0415E00284130 /* DebugLoggable.swift in Sources */,
 				042AE3A129E0A01800284130 /* NetworkProvidersFactory.swift in Sources */,
+				04DB902529E382B100A06049 /* CharacterModel.swift in Sources */,
+				04DB902329E37F9900A06049 /* RickCollectionHeaderView.swift in Sources */,
 				042AE37A29E041C500284130 /* BaseCoordinator.swift in Sources */,
 				042AE37129E03F0D00284130 /* WindowCoordinator.swift in Sources */,
+				04DB901129E33BD000A06049 /* StandartButton.swift in Sources */,
 				042AE39F29E09E6600284130 /* NetworkParams.swift in Sources */,
 				04DB900629E32D9C00A06049 /* ViewModellable.swift in Sources */,
 			);
@@ -870,7 +994,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TryNewTechApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -898,7 +1022,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TryNewTechApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -6,11 +6,15 @@
 //
 
 import Moya
+import RxSwift
+import RxCocoa
+import RxDataSources
 
 final class RickMainViewController: BaseViewController {
-    private let rickProvider: MoyaProvider<RickNetworkService>
     
     var navAction: NavAction<NavType>?
+    
+    private let viewModel: RickMainViewModel
     
     // MARK: - UI properties
     
@@ -23,10 +27,8 @@ final class RickMainViewController: BaseViewController {
     // MARK: - Initialization
     
     init(rickProvider: MoyaProvider<RickNetworkService>) {
-        self.rickProvider = rickProvider
+        self.viewModel = RickMainViewModel(provider: rickProvider)
         super.init()
-        
-        setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -49,14 +51,35 @@ final class RickMainViewController: BaseViewController {
     }
     
     private func bind() {
+        let output = viewModel.output
         
+        let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, CharacterModel>>.init { ds, collectionView, index, element in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RickCollectionViewCell.className, for: index) as! RickCollectionViewCell
+            cell.set(image: element.imageAdress, name: element.name, species: element.species, status: element.status)
+            return cell
+        } configureSupplementaryView: { ds, collectionView, kind, index in
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: RickCollectionHeaderView.className, for: index) as! RickCollectionHeaderView
+            header.itemClick.emit(to: self.viewModel.input.historyClicked).disposed(by: self.disposeBag)
+            return header
+        }
+        
+        self.rx.viewWillAppear
+            .map { _ in () }
+            .bind(to: self.viewModel.input.refresher)
+            .disposed(by: disposeBag)
+        
+        disposeBag.insert(
+            output.characters.map({ models -> [SectionModel<String, CharacterModel>] in
+                return [SectionModel(model: "", items: models)]
+            }).drive(self.contentView.collectionView.rx.items(dataSource: dataSource))
+        )
     }
     
 }
 
 extension RickMainViewController: Navigatable {
     enum NavType {
-        case close
-        case logout
+        case detail
+        case history
     }
 }

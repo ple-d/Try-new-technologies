@@ -14,7 +14,7 @@ class MainCoordinator: Coordinator, DeepLinkStartable {
         return MainCoordinator(rickNetworkService: NetworkProvidersFactory.shared.getRickProvider())
     }
     
-    private var rickNetworkService: MoyaProvider<RickNetworkService> {
+    private var rickNetworkProvider: MoyaProvider<RickNetworkService> {
         AppCoordinator.shared.networkProvidersFactory.getRickProvider()
     }
 
@@ -26,13 +26,13 @@ class MainCoordinator: Coordinator, DeepLinkStartable {
     
     private weak var mainNavVC: UINavigationController?
     
-    private lazy var mainVC: BaseViewController = {
-        let vc = BaseViewController()
+    private lazy var mainVC: RickMainViewController = {
+        let vc = RickMainViewController(rickProvider: rickNetworkProvider)
         return vc
     }()
     
     var firstViewController: UIViewController & ViewControllerCompletable {
-        testVC
+        mainVC
     }
 
     init(rickNetworkService: MoyaProvider<RickNetworkService>) {

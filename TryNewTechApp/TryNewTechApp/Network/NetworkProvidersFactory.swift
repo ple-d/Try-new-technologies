@@ -44,7 +44,8 @@ class NetworkProvidersFactory {
     private lazy var rickMainProvider: MoyaProvider<RickNetworkService> = {
         let interceptor = Interceptor(adapters: [], retriers: [])
         let session = Alamofire.Session(startRequestsImmediately: false)
-        return MoyaProvider<RickNetworkService>(session: session, plugins: [headersPlugin, loggerPlugin])
+        return MoyaProvider<RickNetworkService>(session: session)
+//        return MoyaProvider<RickNetworkService>(session: session, plugins: [headersPlugin])
     }()
     
     // MARK: Methods

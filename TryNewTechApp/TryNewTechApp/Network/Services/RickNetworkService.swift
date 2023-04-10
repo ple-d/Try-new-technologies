@@ -20,7 +20,8 @@ extension RickNetworkService: TargetType {
     var path: String {
         switch self {
         case .character(page: let page):
-            return "/character/?page=\(page)"
+//            return "character/?page=\(page)"
+            return "character/"
         }
     }
     
@@ -55,7 +56,8 @@ extension RickNetworkService: TargetType {
     }
     
     var headers: [String: String]? {
-        ["signature": "0"]
+//        ["signature": "0"]
+        nil
     }
     
     var validationType: ValidationType {
